@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 50%;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222;
+  color: #ffffff;
+  text-align: center;
+}
+
+.flex-display {
+  width: 100%;
+}
+
+.display-result {
+  height: 80px;
+  text-align: right;
+  font-size: 80px;
+  background-color: #222;
+  margin-right: 3%;
+}
+
+.Row-1,
+.Row-2,
+.Row-3,
+.Row-4,
+.Row-5 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.border-all {
+  padding-top: 30px;
+  margin: 6px;
+  border-radius: 40px;
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  background-color: rgba(74, 70, 70, 0.649);
+}
+
+sup,
+sub {
+  font-size: 15px;
+}
+
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+  margin-top: -15px;
+}
+
+.zero {
+  width: 200px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.fa-equals,
+.fa-plus,
+.fa-minus,
+.fa-xmark,
+.fa-divide,
+.fa-infinity,
+.fa-plus-minus,
+.fa-percent {
+  font-size: 20px;
+}
+
+.yellow {
+  background-color: rgb(242, 180, 25);
+}
+
+.clear-all,
+.white {
+  background-color: rgb(244, 244, 244);
+  color: #222;
+  font-size: 20px;
+}
+
+@media (max-width: 580px) {
+  .display-result {
+    margin-top: 10%;
+    font-size: 50px;
+  }
+
+  .border-all {
+    padding: 20px;
+    margin: 6px;
+    border-radius: 30px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+  }
+
+  .Row-1 > .border-all,
+  .Row-2 > .border-all,
+  .Row-3 > .border-all,
+  .Row-4 > .border-all,
+  .Row-5 > .border-all {
+    display: none;
+  }
+
+  .Row-1 > .mobile,
+  .Row-2 > .mobile,
+  .Row-3 > .mobile,
+  .Row-4 > .mobile,
+  .Row-5 > .mobile {
+    display: inline-flex;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fa-equals,
+  .fa-plus,
+  .fa-minus,
+  .fa-xmark,
+  .fa-divide,
+  .fa-plus-minus,
+  .fa-percent {
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    margin: 0 2% 0 2%;
+    padding-top: 50%;
+  }
+
+  .zero {
+    width: 200px;
+    text-align: left;
+  }
+
+  .Row-5 > .zero {
+    width: 160px;
+    border-radius: 35%;
+    justify-content: left;
+  }
+}
+
+@media (min-width: 1132px) {
+  .display-result {
+    height: 100px;
+    margin-right: 1%;
+    font-weight: bolder;
+  }
+
+  .border-all {
+    font-size: larger;
+    padding-top: 40px;
+    margin: 6px;
+    border-radius: 40px;
+    width: 120px;
+    height: 100px;
+  }
+
+  .zero {
+    width: 250px;
+    text-align: left;
+    padding-left: 40px;
+  }
+}
