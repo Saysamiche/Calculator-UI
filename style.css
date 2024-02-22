@@ -38,15 +38,6 @@ body {
   font-size: 20px;
 }
 
-.Row-1 > .mobile,
-.Row-2 > .mobile,
-.Row-3 > .mobile,
-.Row-4 > .mobile,
-.Row-5 > .mobile {
-  font-size: 30px;
-  padding-bottom: 25px;
-}
-
 .border {
   padding-top: 30px;
   margin: 6px;
@@ -76,7 +67,7 @@ sub {
   padding-left: 30px;
 }
 
-.fa-infinity {
+.fa-infinity{
   font-size: 20px;
 }
 
